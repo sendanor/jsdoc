@@ -1,4 +1,5 @@
 {
+    "newParser": true,
     "tags": {
         "allowUnknownTags": true
     },

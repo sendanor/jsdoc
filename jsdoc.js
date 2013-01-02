@@ -63,7 +63,7 @@ env = {
 app = {
     jsdoc: {
         scanner: new (require('jsdoc/src/scanner').Scanner)(),
-        parser: new (require('jsdoc/src/parser').Parser)(),
+        parser: null,
         name: require('jsdoc/name')
     }
 };
@@ -204,6 +204,14 @@ function main() {
     // look for options on the command line, in the config file, and in the defaults, in that order
     env.opts = _.defaults(env.opts, env.conf.opts, defaultOpts);
 
+    // use the new parser if requested, or if we're running on Node.js
+    if ( env.conf.newParser || vm.isNodejs() ) {
+        app.jsdoc.parser = new (require('jsdoc/src/parser').Parser)();
+    }
+    else {
+        app.jsdoc.parser = new (require('jsdoc/src/rhinoParser').Parser)();
+    }
+
     // which version of javascript will be supported? (rhino only)
     if (typeof version === 'function') {
         version(env.conf.jsVersion || 180);
@@ -212,7 +220,8 @@ function main() {
     if (env.opts.help) {
         console.log( args.help() );
         process.exit(0);
-    } else if (env.opts.test) {
+    }
+    else if (env.opts.test) {
         include('test/runner.js');
         process.exit(0);
     }

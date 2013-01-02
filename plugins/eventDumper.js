@@ -6,6 +6,7 @@
  */
 
 var _ = require('underscore');
+var util = require('util');
 
 var conf = env.conf.eventDumper || {};
 
@@ -29,9 +30,23 @@ if (conf.exclude) {
  * @return {object} The fixed-up object.
  */
 function cleanse(e) {
+    /*jshint forin: false */
     var result = {};
 
+    // on Rhino, can't use hasOwnProperty here
     for (var prop in e) {
+        // by default, don't stringify properties that contain an array of functions
+        if (!conf.includeFunctions && util.isArray(e[prop]) && e[prop][0] &&
+            String(typeof e[prop][0]) === 'function') {
+            result[prop] = 'function[' + e[prop].length + ']';
+            continue;
+        }
+
+        // never include functions that belong to the object
+        if (typeof e[prop] === 'function') {
+            continue;
+        }
+
         // go down an extra level for these
         if (['code', 'doclet', 'meta'].indexOf(prop) !== -1) {
             result[prop] = cleanse(e[prop]);
