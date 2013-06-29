@@ -28,6 +28,8 @@ header
 {
 	display: block;
 	padding: 6px 4px;
+	color: #ffffff;
+	background-color: #000000;
 }
 
 .class-description {
@@ -117,6 +119,8 @@ footer {
     margin-top: 12px;
     font-style: italic;
     font-size: 90%;
+	color: #ffffff;
+	background-color: #000000;
 }
 
 h1
