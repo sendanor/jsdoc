@@ -206,7 +206,7 @@ h6
 
 .description {
 	margin-bottom: 1em;
-	margin-left: -16px;
+	margin-left: 0;
 	margin-top: 1em;
 }
 
@@ -282,4 +282,10 @@ h6
 
 .disabled {
     color: #454545;
+}
+
+hr {
+	color: #f0f0f0;
+	background-color: #f0f0f0;
+	height: 1px;
 }
