@@ -12,7 +12,7 @@ body
 	background-color: #fff;
 	margin: 0;
 	padding: 0;
-	background-color: #c0c0c0;
+	background-color: #f0f0f0;
 }
 
 a {
@@ -310,6 +310,6 @@ h6
 
 hr {
 	color: #f0f0f0;
-	background-color: #f0f0f0;
+	background-color: #c0c0c0;
 	height: 1px;
 }
