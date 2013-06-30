@@ -30,9 +30,10 @@ a:active {
 .page-header {
 	color: #ffffff;
 	background-color: #000000;
-	margin: 0;
-	padding: 0;
+	width: 80%;
 	height: 4em;
+	margin: 0 0 0 20%;
+	padding: 0;
 }
 
 .page-title {
@@ -70,9 +71,9 @@ section
 	background-color: #fff;
     border-bottom: 1px solid #ccc;
 	width: 80%;
+    margin-left: 20%;
+    margin-right: 0;
 	padding: 2em;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .variation {
@@ -136,13 +137,17 @@ nav a:active {
 
 footer {
     display: block;
-    padding: 6px;
-    margin-top: 12px;
     font-style: italic;
     font-size: 0.9em;
 	color: #ffffff;
 	background-color: #000000;
 	text-align: center;
+	width: 80%;
+    margin-top: 0.5em;
+	margin-left: 20%;
+	margin-bottom: 0;
+	margin-right: 0;
+    padding: 0.5em;
 }
 
 h1
