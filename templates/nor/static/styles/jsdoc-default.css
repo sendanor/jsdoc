@@ -60,13 +60,12 @@ header
 
 #main {
     float: left;
-    width: 1em;
+    width: 40em;
 }
 
 section
 {
 	display: block;
-	
 	background-color: #fff;
 	padding: 12px 24px;
     border-bottom: 1px solid #ccc;
