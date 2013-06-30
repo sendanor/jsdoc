@@ -89,11 +89,12 @@ nav
 {
 	position: fixed;
 	top: 4em;
-	left: 0.5em;
+	left: 0;
 	display: block;
 	margin: 2em;
     padding: 0.5em;
 	background-color: #f0f0f0;
+	width: 18%;
 }
 
 nav ul {
