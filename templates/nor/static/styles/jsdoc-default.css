@@ -89,14 +89,15 @@ section
 
 nav
 {
+	position: fixed;
+	top: 4em;
+	right: 0.5em;
 	display: block;
 	float: left;
     width: 23.5em;
-	margin-right: 0.5em;
-    margin-left: 23em;
-    margin-top: 4em;
-    padding: 0;
-	background-color: #e0e0e0;
+	margin: 0;
+    padding: 0.5em;
+	background-color: #f0f0f0;
 }
 
 nav ul {
