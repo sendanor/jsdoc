@@ -30,7 +30,6 @@ a:active {
 .page-header {
 	color: #ffffff;
 	background-color: #000000;
-	width: 80%;
 	height: 4em;
 	margin: 0;
 	padding: 0;
@@ -39,7 +38,7 @@ a:active {
 .page-title {
 	color: #ffffff;
 	background-color: #000000;
-	margin: 0.9em;
+	margin: 0;
 	text-align: center;
 }
 
@@ -70,7 +69,6 @@ section
 	display: block;
 	background-color: #fff;
     border-bottom: 1px solid #ccc;
-	width: 80%;
     margin: 0;
 	padding: 2em;
 }
@@ -139,7 +137,6 @@ footer {
 	color: #ffffff;
 	background-color: #000000;
 	text-align: center;
-	width: 80%;
 	margin: 0;
     padding: 0.5em;
 }
@@ -148,7 +145,7 @@ h1
 {
 	font-size: 2em;
 	font-weight: bold;
-	letter-spacing: 0.075em;
+/*	letter-spacing: 0.075em;*/
 	margin: 0;
 	padding: 0;
 }
