@@ -103,8 +103,8 @@ nav
 	left: 0;
 	bottom: 0;
 	display: block;
-	margin: 5em 1em 2em 1em;
-    padding: 0.5em;
+	margin: 4em 0 1em 0;
+    padding: 2em;
 	background-color: #f0f0f0;
 	width: 18%;
 }
