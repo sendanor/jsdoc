@@ -32,7 +32,7 @@ a:active {
 	background-color: #000000;
 	width: 80%;
 	height: 4em;
-	margin: 0 0 0 20%;
+	margin: 0;
 	padding: 0;
 }
 
@@ -61,7 +61,7 @@ header
 }
 
 #main {
-	margin: 0;
+	margin: 0 0 0 20%;
 	padding: 0;
 }
 
@@ -71,8 +71,7 @@ section
 	background-color: #fff;
     border-bottom: 1px solid #ccc;
 	width: 80%;
-    margin-left: 20%;
-    margin-right: 0;
+    margin: 0;
 	padding: 2em;
 }
 
@@ -114,11 +113,11 @@ nav h2 a, nav h2 a:visited {
 }
 
 nav h3 {
-    margin-top: 2em;
+    margin-top: 0.2em;
 }
 
 nav li {
-    margin-top: 0.5em;
+    margin-top: 0.2em;
 }
 
 nav a {
@@ -141,10 +140,7 @@ footer {
 	background-color: #000000;
 	text-align: center;
 	width: 80%;
-    margin-top: 0.5em;
-	margin-left: 20%;
-	margin-bottom: 0;
-	margin-right: 0;
+	margin: 0;
     padding: 0.5em;
 }
 
