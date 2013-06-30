@@ -60,7 +60,6 @@ header
 }
 
 #main {
-    float: left;
 	margin: 0;
 	padding: 0;
 }
@@ -71,8 +70,9 @@ section
 	background-color: #fff;
 	padding: 12px 24px;
     border-bottom: 1px solid #ccc;
-    margin-left: 24em;
-    margin-right: 24em;
+	min-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .variation {
