@@ -101,6 +101,7 @@ nav
 	position: fixed;
 	top: 0;
 	left: 0;
+	bottom: 0;
 	display: block;
 	margin: 5em 1em 2em 1em;
     padding: 0.5em;
