@@ -107,6 +107,7 @@ nav
     padding: 2em;
 	background-color: #f0f0f0;
 	width: 18%;
+	overflow: auto;
 }
 
 nav ul {
