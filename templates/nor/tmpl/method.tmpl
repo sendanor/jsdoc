@@ -3,6 +3,7 @@ var data = obj;
 var self = this;
 ?>
 <dt>
+	<hr />
     <h4 class="name" id="<?js= id ?>"><?js= data.attribs + (kind === 'class' ? 'new ' : '') + name + (kind !== 'event' ? data.signature : '') ?></h4>
     
     <?js if (data.summary) { ?>
@@ -18,6 +19,7 @@ var self = this;
     <?js } ?>
 
     <?js if (kind === 'event' && data.type && data.type.names) {?>
+		<hr />
         <h5>Type:</h5>
         <ul>
             <li>
@@ -27,11 +29,13 @@ var self = this;
     <?js } ?>
     
     <?js if (data['this']) { ?>
+		<hr />
         <h5>This:</h5>
         <ul><li><?js= this.linkto(data['this'], data['this']) ?></li></ul>
     <?js } ?>
     
     <?js if (data.params && params.length) { ?>
+		<hr />
         <h5>Parameters:</h5>
         <?js= this.partial('params.tmpl', params) ?>
     <?js } ?>
@@ -39,6 +43,7 @@ var self = this;
     <?js= this.partial('details.tmpl', data) ?>
     
     <?js if (data.fires && fires.length) { ?>
+	<hr />
     <h5>Fires:</h5>
     <ul><?js fires.forEach(function(f) { ?>
         <li><?js= self.linkto(f) ?></li>
@@ -46,6 +51,7 @@ var self = this;
     <?js } ?>
 
     <?js if (data.listens && listens.length) { ?>
+	<hr />
     <h5>Listens to Events:</h5>
     <ul><?js listens.forEach(function(f) { ?>
         <li><?js= self.linkto(f) ?></li>
@@ -53,6 +59,7 @@ var self = this;
     <?js } ?>
 
     <?js if (data.listeners && listeners.length) { ?>
+	<hr />
     <h5>Listeners of This Event:</h5>
     <ul><?js listeners.forEach(function(f) { ?>
         <li><?js= self.linkto(f) ?></li>
@@ -60,6 +67,7 @@ var self = this;
     <?js } ?>
     
     <?js if (data.exceptions && exceptions.length) { ?>
+	<hr />
     <h5>Throws:</h5>
     <?js if (exceptions.length > 1) { ?><ul><?js
         exceptions.forEach(function(r) { ?>
@@ -72,6 +80,7 @@ var self = this;
     } } ?>
     
     <?js if (data.returns && returns.length) { ?>
+	<hr />
     <h5>Returns:</h5>
     <?js if (returns.length > 1) { ?><ul><?js
         returns.forEach(function(r) { ?>
@@ -84,6 +93,7 @@ var self = this;
     } } ?>
     
     <?js if (data.examples && examples.length) { ?>
+		<hr />
         <h5>Example<?js= examples.length > 1? 's':'' ?></h5>
         <?js= this.partial('examples.tmpl', examples) ?>
     <?js } ?>

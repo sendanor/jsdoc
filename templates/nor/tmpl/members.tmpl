@@ -3,6 +3,7 @@ var data = obj;
 var self = this;
 ?>
 <dt>
+	<hr />
     <h4 class="name" id="<?js= id ?>"><?js= data.attribs + name + (data.signature ? data.signature : '') ?></h4>
     
     <?js if (data.summary) { ?>
@@ -17,6 +18,7 @@ var self = this;
     <?js } ?>
     
     <?js if (data.type && data.type.names) {?>
+		<hr />
         <h5>Type:</h5>
         <ul>
             <li>
@@ -28,6 +30,7 @@ var self = this;
     <?js= this.partial('details.tmpl', data) ?>
     
     <?js if (data.examples && examples.length) { ?>
+		<hr />
         <h5>Example<?js= examples.length > 1? 's':'' ?></h5>
         <?js= this.partial('examples.tmpl', examples) ?>
     <?js } ?>
