@@ -2,7 +2,6 @@ html
 {
 	margin: 0;
 	padding: 0;
-	height: 100%;
     overflow: auto;
     background-color: #fff;
 }
@@ -14,7 +13,6 @@ body
 	color: #000;
 /*	background-color: #f0f0f0;*/
 	background-color: #fff;
-	height: 100%;
 	margin: 0;
 	padding: 0;
 }
@@ -71,7 +69,6 @@ header
 #main {
     margin: 4em 1em 4em 25%;
 	padding: 0;
-	height: 100%;
 }
 
 section
@@ -81,7 +78,6 @@ section
 /*    border-bottom: 1px solid #ccc;*/
 	margin: 0;
 	padding: 2em;
-	height: 100%;
 }
 
 .variation {
