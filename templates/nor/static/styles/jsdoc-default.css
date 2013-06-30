@@ -12,11 +12,11 @@ body
 	font: 1em Tahoma, Verdana, Arial, sans-serif;
 /*	line-height: 1.3em; */
 	color: #000;
+/*	background-color: #f0f0f0;*/
 	background-color: #fff;
 	height: 100%;
 	margin: 0;
 	padding: 0;
-	background-color: #f0f0f0;
 }
 
 a {
@@ -78,7 +78,7 @@ section
 {
 	display: block;
 	background-color: #fff;
-    border-bottom: 1px solid #ccc;
+/*    border-bottom: 1px solid #ccc;*/
 	margin: 0;
 	padding: 2em;
 	height: 100%;
